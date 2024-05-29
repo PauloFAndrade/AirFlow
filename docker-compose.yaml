@@ -84,7 +84,7 @@ x-airflow-common:
       condition: service_healthy
     postgres:
       condition: service_healthy
-  entrypoint: "sh -c 'cd /opt/airflow/dags && git pull origin main && airflow webserver'"
+  #entrypoint: "sh -c 'cd /opt/airflow/dags && git pull origin main && airflow webserver'"
 
 services:
   postgres:
